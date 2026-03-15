@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
-    unoptimized: true,
     dangerouslyAllowSVG: true,
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
