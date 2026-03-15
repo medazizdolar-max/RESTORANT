@@ -1,5 +1,4 @@
 import type {NextConfig} from 'next';
-
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   eslint: {
@@ -9,8 +8,8 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
+    unoptimized: true,
     dangerouslyAllowSVG: true,
-    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -30,5 +29,4 @@ const nextConfig: NextConfig = {
     return config;
   },
 };
-
 export default nextConfig;
